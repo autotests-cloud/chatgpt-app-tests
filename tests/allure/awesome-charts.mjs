@@ -30,7 +30,7 @@ const LOCKED_RENDERERS = {
  */
 export function buildAwesomeCharts() {
   return [
-    ...presets.lockedQuad({
+    ...presets.fromOverview({
       layers: [...PYRAMID_LAYERS],
       titles: LOCKED_TITLES,
       limit: 20,
