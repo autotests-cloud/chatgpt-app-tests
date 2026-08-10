@@ -35,7 +35,7 @@ export function componentLabelFilter(component) {
 export function buildComponentReadmeDashboardLayout(component) {
   const filter = componentLabelFilter(component);
 
-  return presets.lockedQuad({
+  return presets.fromOverview({
     layers: [...PYRAMID_LAYERS],
     titles: LOCKED_TITLES,
     limit: 20,
@@ -61,7 +61,7 @@ export function buildDashboardLayout({ epicCharts = [] } = {}) {
   );
 
   return [
-    ...presets.lockedQuad({
+    ...presets.fromOverview({
       layers: [...PYRAMID_LAYERS],
       titles: LOCKED_TITLES,
       limit: 20,
