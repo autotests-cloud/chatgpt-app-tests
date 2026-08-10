@@ -6,10 +6,10 @@
     "node": ">=26"
   },
   "dependencies": {
-    "@qa-guru/allure-report-kit": "0.2.4",
+    "@qa-guru/allure-report-kit": "0.3.0",
     "@qa-guru/allure-report-kit-awesome": "3.14.3-2",
     "@qa-guru/allure-report-kit-dashboard": "3.14.3-2",
     "allure": "3.14.3",
-    "allure-notifications": "6.0.13"
+    "@qa-guru/allure-notifications": "6.1.1"
   }
 }
