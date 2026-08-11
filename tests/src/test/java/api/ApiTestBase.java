@@ -7,7 +7,7 @@ import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeAll;
 
-@Issue("REF-3")
+@Issue("REF-19")
 public class ApiTestBase {
 
     protected static final TestConfig config = ConfigReader.testConfig;

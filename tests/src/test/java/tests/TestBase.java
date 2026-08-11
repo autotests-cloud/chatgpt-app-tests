@@ -31,7 +31,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 @Scope("browser")
 @Framework("selenide")
-@Issue("REF-3")
+@Issue("REF-19")
 public class TestBase {
 
     protected HomePage homePage = new HomePage();
