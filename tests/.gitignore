@@ -9,7 +9,6 @@ demo/
 app-path-local
 
 # Env profiles are committed (Owner classpath:config/${env}.properties).
-# Regen locally after changing scripts/gen-env-configs.py: python scripts/gen-env-configs.py
 
 allure-results/
 bin/
