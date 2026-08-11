@@ -1,6 +1,6 @@
 # tests — Java autotests
 
-Selenide + JUnit 5 + Allure 3. Student contour **REF-19** (`@Issue("REF-19")` on `TestBase`, `ApiTestBase`, `LoginFormTests`).
+Selenide + JUnit 5 + Allure 3. Student contour **REF-19** (`@Issue("REF-19")` on `tests.e2e.LoginTests`).
 
 Target: [reference-app.autotests.ai](https://reference-app.autotests.ai/) + Selenoid (`reference_prod` stand).
 
@@ -10,7 +10,6 @@ Target: [reference-app.autotests.ai](https://reference-app.autotests.ai/) + Sele
 |-------|-------------|---------|
 | unit | `testUnit` | `helpers`, `config` |
 | api | `testApi` | `api` |
-| integration | `testIntegration` | `tests.integration` |
 | e2e | `testE2e` | `tests.e2e` |
 | visual | `testVisual` | `tests.visual` |
 
