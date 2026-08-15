@@ -1,6 +1,6 @@
 # Page objects
 
-**reference-app** — home page at app root. Resolved via `baseUrl` in `config/reference_ci_*.properties`.
+**autotests-ai-multistack-app** — home page at app root. Resolved via `baseUrl` in `config/multistack_ci_*.properties`.
 
 | Page | Class | Open |
 |------|-------|------|
@@ -11,4 +11,4 @@ Post-auth state (welcome message, logout) lives on `HomePage` at `/`.
 
 ## Profiles
 
-`reference_ci_e2e.properties` / `reference_ci_integration.properties`: `baseUrl=http://localhost:8820/`
+`multistack_ci_e2e.properties` / `multistack_ci_integration.properties`: `baseUrl=http://localhost:8820/`

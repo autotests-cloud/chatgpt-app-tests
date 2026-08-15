@@ -2,7 +2,7 @@
 
 Selenide + JUnit 5 + Allure 3. Student contour **REF-19** (`@Issue("REF-19")` on `tests.e2e.LoginTests`).
 
-Target: [reference-app.autotests.ai](https://reference-app.autotests.ai/) + Selenoid (`reference_prod` stand).
+Target: [autotests.ai/stack](https://autotests.ai/stack/backend-java-spring/frontend-typescript-react/) + Selenoid (`multistack_prod` stand).
 
 ## Pyramid layers
 
@@ -19,16 +19,16 @@ Committed under `src/test/resources/config/` — `{stand}_{layer}.properties`.
 
 | Stand | Example | baseUrl |
 |-------|---------|---------|
-| `reference_ci` | `reference_ci_e2e` | `http://localhost:8820/` |
-| `reference_prod` | `reference_prod_e2e` | `https://reference-app.autotests.ai/` + Selenoid |
+| `multistack_ci` | `multistack_ci_e2e` | `http://localhost:8820/` |
+| `multistack_prod` | `multistack_prod_e2e` | `https://autotests.ai/stack/backend-java-spring/frontend-typescript-react/` + Selenoid |
 
 ## Quick start
 
 ```bash
 npm ci
-./gradlew testE2e -Denv=reference_prod_e2e \
-  -DbaseUrl=https://reference-app.autotests.ai/ \
-  -DapiBaseUrl=https://reference-app.autotests.ai/
+./gradlew testE2e -Denv=multistack_prod_e2e \
+  -DbaseUrl=https://autotests.ai/stack/backend-java-spring/frontend-typescript-react/ \
+  -DapiBaseUrl=https://autotests.ai/stack/backend-java-spring/
 ```
 
 Jenkins (`chatgpt-app-tests-freestyle-java-allure3-full-attachments`) runs one e2e:

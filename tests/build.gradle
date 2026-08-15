@@ -32,7 +32,7 @@ buildscript {
         restAssuredVersion  = '5.5.7'
         ownerVersion        = '1.0.12'
         testParallelForks   = 1
-        defaultEnv          = 'reference_ci_e2e'
+        defaultEnv          = 'multistack_ci_e2e'
     }
 }
 
@@ -343,7 +343,7 @@ def knownPyramidLayers = ['unit', 'integration', 'api', 'e2e', 'visual', 'manual
 def layerEnvName = { String layer ->
     def env = System.getProperty('env')
     if (!env) {
-        return "reference_ci_${layer}"
+        return "multistack_ci_${layer}"
     }
     def idx = env.lastIndexOf('_')
     if (idx > 0) {
