@@ -51,8 +51,8 @@ java {
 
 sonar {
     properties {
-        property 'sonar.projectKey', System.getenv('SONAR_PROJECT_KEY') ?: 'reference-app-tests'
-        property 'sonar.projectName', System.getenv('SONAR_PROJECT_KEY') ?: 'reference-app-tests'
+        property 'sonar.projectKey', System.getenv('SONAR_PROJECT_KEY') ?: 'chatgpt-app-tests'
+        property 'sonar.projectName', System.getenv('SONAR_PROJECT_KEY') ?: 'chatgpt-app-tests'
         property 'sonar.host.url', System.getenv('SONAR_HOST_URL') ?: 'https://sonar.qa.guru'
         // Test sources as main — Selenide/helpers living under src/test/java.
         property 'sonar.sources', 'src/test/java'
